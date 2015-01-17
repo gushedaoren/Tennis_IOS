@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property(readwrite,strong) IBOutlet UIImageView* imgLeft1;
+
+@property(readwrite,strong) IBOutlet UIImageView* imgLeft2;
+
+
+-(IBAction)tapHandler:(id)sender;
+
 
 @end
 

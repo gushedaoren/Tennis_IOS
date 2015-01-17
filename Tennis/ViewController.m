@@ -17,6 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+     NSLog(@"viewDidLoad");
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandler:)];
+    
+    
+    [self.imgLeft2 addGestureRecognizer:tap];
+   }
+
+- (IBAction)tapHandler:(UITapGestureRecognizer *)recognizer {
+    
+    
+    
+    NSLog(@"you clicked me");
+
+  
 }
 
 - (void)didReceiveMemoryWarning {
