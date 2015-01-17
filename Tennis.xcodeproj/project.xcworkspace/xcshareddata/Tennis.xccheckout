@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>50765C49-4B8E-4C1E-A056-DAA301110F9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tennis</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3978FCDA3401558D1DA87B26E3EB0E1B27BB499A</key>
+		<string>https://github.com/gushedaoren/Tennis_IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tennis.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3978FCDA3401558D1DA87B26E3EB0E1B27BB499A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gushedaoren/Tennis_IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3978FCDA3401558D1DA87B26E3EB0E1B27BB499A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3978FCDA3401558D1DA87B26E3EB0E1B27BB499A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tennis</string>
+		</dict>
+	</array>
+</dict>
+</plist>

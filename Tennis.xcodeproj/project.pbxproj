@@ -402,6 +402,7 @@
 				A7E0BCB71A66A22700FAFD2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7E0BCB81A66A22700FAFD2F /* Build configuration list for PBXNativeTarget "TennisTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +411,7 @@
 				A7E0BCBA1A66A22700FAFD2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
