@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7701CCE1A6B600900A581D4 /* CourtListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7701CCD1A6B600900A581D4 /* CourtListTableViewController.m */; };
+		A7A54BBC1A6B65C300E1326B /* CourtListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A54BBB1A6B65C300E1326B /* CourtListTableViewCell.m */; };
 		A7E0BC9B1A66A22700FAFD2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E0BC9A1A66A22700FAFD2F /* main.m */; };
 		A7E0BC9E1A66A22700FAFD2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E0BC9D1A66A22700FAFD2F /* AppDelegate.m */; };
 		A7E0BCA11A66A22700FAFD2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E0BCA01A66A22700FAFD2F /* ViewController.m */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7701CCC1A6B600900A581D4 /* CourtListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourtListTableViewController.h; sourceTree = "<group>"; };
+		A7701CCD1A6B600900A581D4 /* CourtListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourtListTableViewController.m; sourceTree = "<group>"; };
+		A7A54BBA1A6B65C300E1326B /* CourtListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourtListTableViewCell.h; sourceTree = "<group>"; };
+		A7A54BBB1A6B65C300E1326B /* CourtListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourtListTableViewCell.m; sourceTree = "<group>"; };
 		A7E0BC951A66A22700FAFD2F /* Tennis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tennis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E0BC991A66A22700FAFD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E0BC9A1A66A22700FAFD2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7701CCB1A6B5F8400A581D4 /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+				A7701CCC1A6B600900A581D4 /* CourtListTableViewController.h */,
+				A7701CCD1A6B600900A581D4 /* CourtListTableViewController.m */,
+			);
+			name = contorller;
+			sourceTree = "<group>";
+		};
+		A7A54BB91A6B65AC00E1326B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A7A54BBA1A6B65C300E1326B /* CourtListTableViewCell.h */,
+				A7A54BBB1A6B65C300E1326B /* CourtListTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		A7E0BC8C1A66A22700FAFD2F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +103,8 @@
 		A7E0BC971A66A22700FAFD2F /* Tennis */ = {
 			isa = PBXGroup;
 			children = (
+				A7A54BB91A6B65AC00E1326B /* view */,
+				A7701CCB1A6B5F8400A581D4 /* contorller */,
 				A7E0BC9C1A66A22700FAFD2F /* AppDelegate.h */,
 				A7E0BC9D1A66A22700FAFD2F /* AppDelegate.m */,
 				A7E0BC9F1A66A22700FAFD2F /* ViewController.h */,
@@ -216,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E0BCA11A66A22700FAFD2F /* ViewController.m in Sources */,
+				A7701CCE1A6B600900A581D4 /* CourtListTableViewController.m in Sources */,
+				A7A54BBC1A6B65C300E1326B /* CourtListTableViewCell.m in Sources */,
 				A7E0BC9E1A66A22700FAFD2F /* AppDelegate.m in Sources */,
 				A7E0BC9B1A66A22700FAFD2F /* main.m in Sources */,
 			);

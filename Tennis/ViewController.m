@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CourtListTableViewController.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,9 @@
     
      NSLog(@"viewDidLoad");
     
+    
+    
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandler:)];
     
     
@@ -30,7 +34,14 @@
     
     
     
-    NSLog(@"you clicked me");
+         NSLog(@"you clicked me");
+    CourtListTableViewController *courtlistController=[[CourtListTableViewController alloc]init];
+    [self presentViewController:courtlistController animated:true completion:nil];
+    
+    
+    
+    
+   
 
   
 }
