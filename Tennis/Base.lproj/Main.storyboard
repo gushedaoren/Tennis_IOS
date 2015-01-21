@@ -93,7 +93,7 @@
         <!--个人中心-->
         <scene sceneID="YDj-nL-8uZ">
             <objects>
-                <viewController id="9JA-Gu-cIq" sceneMemberID="viewController">
+                <viewController id="9JA-Gu-cIq" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eIT-zG-1hb"/>
                         <viewControllerLayoutGuide type="bottom" id="U32-qw-fWh"/>
@@ -101,11 +101,74 @@
                     <view key="view" contentMode="scaleToFill" id="8h6-nb-OWi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default_user_img" translatesAutoresizingMaskIntoConstraints="NO" id="6ZX-oZ-LlJ">
+                                <rect key="frame" x="101" y="88" width="118" height="83"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Tx-y8-v3r">
+                                <rect key="frame" x="33" y="234" width="245" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_login_password" translatesAutoresizingMaskIntoConstraints="NO" id="ZKk-VF-2mV">
+                                <rect key="frame" x="252" y="234" width="26" height="24"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOp-J1-gdw">
+                                <rect key="frame" x="33" y="322" width="21" height="22"/>
+                                <state key="normal" image="check_box_off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="remenberPasswordCheckChanged:" destination="9JA-Gu-cIq" eventType="touchUpInside" id="Ava-t1-naB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="记住密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w81-Kg-Swm">
+                                <rect key="frame" x="57" y="322" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uf-xK-4as">
+                                <rect key="frame" x="199" y="318" width="79" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="免费注册&gt;&gt;">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AvV-1S-TDJ">
+                                <rect key="frame" x="33" y="190" width="245" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_login_user" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-Q7-Wuo">
+                                <rect key="frame" x="252" y="190" width="26" height="24"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwt-fk-Hrp">
+                                <rect key="frame" x="33" y="274" width="245" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" red="0.0" green="0.80392163989999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionLogin:" destination="9JA-Gu-cIq" eventType="touchUpInside" id="B6E-6l-9kz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.08235294371843338" green="0.68235296010971069" blue="0.23137256503105164" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="个人中心" id="gB4-VU-LPm">
                         <barButtonItem key="backBarButtonItem" width="50" systemItem="cancel" id="9zm-Sl-2kO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btn_check" destination="hOp-J1-gdw" id="ad1-oe-xqC"/>
+                        <outlet property="btn_login" destination="jwt-fk-Hrp" id="zGA-fO-xVF"/>
+                        <outlet property="btn_register" destination="4Uf-xK-4as" id="b93-gM-4JA"/>
+                        <outlet property="edit_password" destination="7Tx-y8-v3r" id="C0o-YC-hho"/>
+                        <outlet property="edit_user" destination="AvV-1S-TDJ" id="a5s-8Y-go3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrK-at-Jqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +194,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="check_box_off" width="22" height="21"/>
+        <image name="default_user_img" width="245" height="183"/>
+        <image name="ic_login_password" width="19" height="19"/>
+        <image name="ic_login_user" width="19" height="19"/>
         <image name="main_left1" width="320" height="297"/>
         <image name="main_left2" width="320" height="297"/>
         <image name="main_left3" width="320" height="186"/>
