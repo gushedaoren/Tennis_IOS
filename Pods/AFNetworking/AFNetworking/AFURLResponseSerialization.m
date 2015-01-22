@@ -1,3 +1,4 @@
+
 // AFSerialization.h
 //
 // Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com)
@@ -220,8 +221,8 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
         return nil;
     }
 
-    self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
-
+    self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json", @"text/javascript", nil];
+6
     return self;
 }
 

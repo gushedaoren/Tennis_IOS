@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "CourtListTableViewController.h"
 
 @interface ViewController ()
 
@@ -38,13 +37,7 @@
     
     
          NSLog(@"you clicked me");
-    CourtListTableViewController *courtlistController=[[CourtListTableViewController alloc]init];
-    [self presentViewController:courtlistController animated:true completion:nil];
-    
-    
-    
-    
-   
+
 
   
 }

@@ -7,7 +7,8 @@
 //
 
 #import "LoginViewController.h"
-
+#import <AFNetworking/AFNetworking.h>
+#import "Config.h"
 
 @interface LoginViewController ()
 
@@ -74,5 +75,16 @@
     
     
     
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    NSDictionary *params = @{@"account": user, @"password": password};
+    
+
+    
+    [manager GET:@"http://nixuchen.com:8000/tennis/login" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 @end
