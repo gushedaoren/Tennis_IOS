@@ -58,7 +58,16 @@
 }
 
 
-
+-(void)ShowMessage:(NSString *) title msg:(NSString *) message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:@"确定"
+                                          otherButtonTitles:@"取消", nil];
+    [alert show];
+    
+}
 
 
 - (IBAction)actionLogin:(id)sender {
@@ -79,10 +88,26 @@
     
     NSDictionary *params = @{@"account": user, @"password": password};
     
-
     
     [manager GET:@"http://nixuchen.com:8000/tennis/login" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
+    
+
+        
+        
+        NSDictionary *json=responseObject;
+        
+        id statusCode=[json objectForKey:@"statusCode"];
+        
+        NSString *message=[json objectForKey:@"message"];
+    
+        
+        if(statusCode!=0){
+            [self ShowMessage:@"提示" msg:message];
+        }else{
+            [self ShowMessage:@"提示" msg:message];
+        }
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
