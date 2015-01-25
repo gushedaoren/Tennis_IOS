@@ -10,7 +10,9 @@
 #import <AFNetworking/AFNetworking.h>
 #import "Config.h"
 
-@interface BaseViewController : UIViewController
+
+
+@interface BaseViewController : UIViewController <UIAlertViewDelegate>
 @property(nonatomic,strong) AFHTTPRequestOperationManager *httpManager;
 
 -(void)showMessage:(NSString *) title msg:(NSString *) message;

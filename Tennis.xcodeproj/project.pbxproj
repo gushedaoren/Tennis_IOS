@@ -11,6 +11,7 @@
 		A7284B461A749348000C63EC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B451A749348000C63EC /* BaseViewController.m */; };
 		A7284B4A1A74C8EF000C63EC /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B491A74C8EF000C63EC /* BaseNavigationController.m */; };
 		A7284B4D1A74CCCC000C63EC /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B4C1A74CCCC000C63EC /* RegisterViewController.m */; };
+		A7284B501A74FAB6000C63EC /* UpdateUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B4F1A74FAB6000C63EC /* UpdateUserInfoViewController.m */; };
 		A7443E651A6FDC8D005F0247 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = A7443E641A6FDC8D005F0247 /* Config.m */; };
 		A7A54BBC1A6B65C300E1326B /* CourtListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A54BBB1A6B65C300E1326B /* CourtListTableViewCell.m */; };
 		A7CBFDF21A6B85DD00B03CE9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CBFDF11A6B85DD00B03CE9 /* LoginViewController.m */; };
@@ -39,6 +40,8 @@
 		A7284B491A74C8EF000C63EC /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		A7284B4B1A74CCCC000C63EC /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		A7284B4C1A74CCCC000C63EC /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		A7284B4E1A74FAB6000C63EC /* UpdateUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateUserInfoViewController.h; sourceTree = "<group>"; };
+		A7284B4F1A74FAB6000C63EC /* UpdateUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateUserInfoViewController.m; sourceTree = "<group>"; };
 		A7443E631A6FDC8D005F0247 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		A7443E641A6FDC8D005F0247 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		A7A54BBA1A6B65C300E1326B /* CourtListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourtListTableViewCell.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				A7CBFDF11A6B85DD00B03CE9 /* LoginViewController.m */,
 				A7284B4B1A74CCCC000C63EC /* RegisterViewController.h */,
 				A7284B4C1A74CCCC000C63EC /* RegisterViewController.m */,
+				A7284B4E1A74FAB6000C63EC /* UpdateUserInfoViewController.h */,
+				A7284B4F1A74FAB6000C63EC /* UpdateUserInfoViewController.m */,
 			);
 			name = contorller;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 			files = (
 				A7443E651A6FDC8D005F0247 /* Config.m in Sources */,
 				A7E0BCA11A66A22700FAFD2F /* ViewController.m in Sources */,
+				A7284B501A74FAB6000C63EC /* UpdateUserInfoViewController.m in Sources */,
 				A7CBFDF21A6B85DD00B03CE9 /* LoginViewController.m in Sources */,
 				A7A54BBC1A6B65C300E1326B /* CourtListTableViewCell.m in Sources */,
 				A7284B4D1A74CCCC000C63EC /* RegisterViewController.m in Sources */,

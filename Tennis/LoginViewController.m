@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import "Config.h"
+#import "UpdateUserInfoViewController.h"
 
 @interface LoginViewController ()
 
@@ -98,6 +99,26 @@
                 [self showMessage:@"提示" msg:message];
             }
     
+}
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            
+            NSLog(@"you pressed ok button");
+      //      UpdateUserInfoViewController *mController = [UpdateUserInfoViewController];
+            
+      //      [self.navigationController pushViewController: controller animated:true];
+            break;
+            
+        case 1:
+            NSLog(@"you pressed cancel button");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 
