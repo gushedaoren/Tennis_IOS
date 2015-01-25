@@ -10,7 +10,9 @@
 
 #import "BaseViewController.h"
 
-
+#import "UpdateUserInfoViewController.h"
+#import "RegisterViewController.h"
+#import "BaseNavigationController.h"
 @interface LoginViewController : BaseViewController
 
 

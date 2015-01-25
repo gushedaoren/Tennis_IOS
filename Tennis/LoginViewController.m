@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import "Config.h"
-#import "UpdateUserInfoViewController.h"
+
 
 @interface LoginViewController ()
 
@@ -105,17 +105,31 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     switch (buttonIndex) {
         case 0:
+        {
             
             NSLog(@"you pressed ok button");
-      //      UpdateUserInfoViewController *mController = [UpdateUserInfoViewController];
+         
             
-      //      [self.navigationController pushViewController: controller animated:true];
+            
+            UpdateUserInfoViewController *mController = [self.storyboard instantiateViewControllerWithIdentifier:@"updateUserInfo"];
+            
+            
+            [self.navigationController presentViewController:mController animated:true completion:^{
+                
+            }];
+            
+        }
+            
             break;
+
             
         case 1:
+        {
             NSLog(@"you pressed cancel button");
-            break;
+                   }
             
+            break;
+
         default:
             break;
     }
