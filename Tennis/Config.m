@@ -8,7 +8,7 @@
 
 #import "Config.h"
 
-
+#define hostName="http://nixuchen.com:8000";
 
 
 @implementation Config
