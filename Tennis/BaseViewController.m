@@ -68,17 +68,22 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             
+            if(responseObject==nil){
+                NSLog(@"result null");
+            }else{
+                NSLog(@"result: %@",responseObject);
+                
+                
+                [self handleResult:responseObject];
+
+            }
             
-            NSLog(@"result: %@",responseObject);
-            
-            
-            [self handleResult:responseObject];
-        
         
         
         });
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
+        NSLog(@"error:%@",error);
         [self showMessage:@"提示" msg:@"网络异常"];
         
     }];

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8587CBEDFB95F3CE311E545E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB25712A7818BF509137C9BB /* libPods.a */; };
 		A7284B461A749348000C63EC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B451A749348000C63EC /* BaseViewController.m */; };
+		A7284B4A1A74C8EF000C63EC /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B491A74C8EF000C63EC /* BaseNavigationController.m */; };
+		A7284B4D1A74CCCC000C63EC /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7284B4C1A74CCCC000C63EC /* RegisterViewController.m */; };
 		A7443E651A6FDC8D005F0247 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = A7443E641A6FDC8D005F0247 /* Config.m */; };
 		A7A54BBC1A6B65C300E1326B /* CourtListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A54BBB1A6B65C300E1326B /* CourtListTableViewCell.m */; };
 		A7CBFDF21A6B85DD00B03CE9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CBFDF11A6B85DD00B03CE9 /* LoginViewController.m */; };
@@ -33,6 +35,10 @@
 /* Begin PBXFileReference section */
 		A7284B441A749348000C63EC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Tennis/BaseViewController.h; sourceTree = "<group>"; };
 		A7284B451A749348000C63EC /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Tennis/BaseViewController.m; sourceTree = "<group>"; };
+		A7284B481A74C8EF000C63EC /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		A7284B491A74C8EF000C63EC /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		A7284B4B1A74CCCC000C63EC /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		A7284B4C1A74CCCC000C63EC /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		A7443E631A6FDC8D005F0247 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		A7443E641A6FDC8D005F0247 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		A7A54BBA1A6B65C300E1326B /* CourtListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourtListTableViewCell.h; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 			children = (
 				A7284B441A749348000C63EC /* BaseViewController.h */,
 				A7284B451A749348000C63EC /* BaseViewController.m */,
+				A7284B481A74C8EF000C63EC /* BaseNavigationController.h */,
+				A7284B491A74C8EF000C63EC /* BaseNavigationController.m */,
 			);
 			name = base;
 			sourceTree = "<group>";
@@ -115,6 +123,8 @@
 			children = (
 				A7CBFDF01A6B85DD00B03CE9 /* LoginViewController.h */,
 				A7CBFDF11A6B85DD00B03CE9 /* LoginViewController.m */,
+				A7284B4B1A74CCCC000C63EC /* RegisterViewController.h */,
+				A7284B4C1A74CCCC000C63EC /* RegisterViewController.m */,
 			);
 			name = contorller;
 			sourceTree = "<group>";
@@ -330,6 +340,8 @@
 				A7E0BCA11A66A22700FAFD2F /* ViewController.m in Sources */,
 				A7CBFDF21A6B85DD00B03CE9 /* LoginViewController.m in Sources */,
 				A7A54BBC1A6B65C300E1326B /* CourtListTableViewCell.m in Sources */,
+				A7284B4D1A74CCCC000C63EC /* RegisterViewController.m in Sources */,
+				A7284B4A1A74C8EF000C63EC /* BaseNavigationController.m in Sources */,
 				A7E0BC9E1A66A22700FAFD2F /* AppDelegate.m in Sources */,
 				A7284B461A749348000C63EC /* BaseViewController.m in Sources */,
 				A7E0BC9B1A66A22700FAFD2F /* main.m in Sources */,
